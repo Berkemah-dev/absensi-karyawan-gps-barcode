@@ -6,7 +6,11 @@
         <!-- Logo -->
         <div class="flex shrink-0 items-center">
           <a href="{{ Auth::user()->isAdmin ? route('admin.dashboard') : route('home') }}">
-            <x-application-mark class="block h-9 w-auto" />
+            <img
+                        src="{{ asset('assets/foto/berkemah.png') }}"
+                        alt="logo"
+                        style="width: 50px"
+                    />
           </a>
         </div>
 
